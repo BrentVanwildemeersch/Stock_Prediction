@@ -1,9 +1,9 @@
-from pandas-datareader import DataReader
+from pandas_datareader import data
 import datetime
 
-start = datetime.datetimeime(2013,1,1)
+start = datetime.datetime(2013,1,1)
 end = datetime.datetime(2016,1,4)
-df = web.DataReader("GOOGL", start,end)
+df = data.DataReader("GOOGL","yahoo", start,end)
 
 dates=[]
 for x in range(len(df)):

@@ -6,7 +6,7 @@ from TFMLP import MLPR
 import tensorflow as tf
 
 
-pth = 'apple_stock.csv'
+pth = '../apple_stock.csv'
 A= np.loadtxt(pth,delimiter=",",skiprows=1,usecols=(1,4))
 A=scale(A)
 
